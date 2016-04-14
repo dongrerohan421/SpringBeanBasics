@@ -13,6 +13,7 @@
 		<config>src/main/resources/com/spring/bean/scope/customerServiceScope.xml</config>
 		<config>src/main/resources/com/spring/bean/collections/customerCollections.xml</config>
 		<config>src/main/resources/com/spring/bean/collections/list/customerList.xml</config>
+		<config>src/main/resources/com/spring/bean/collections/set/customerSet.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
