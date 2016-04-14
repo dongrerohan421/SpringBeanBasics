@@ -11,6 +11,7 @@
 		<config>src/main/resources/com/spring/bean/inner/springAllModules.xml</config>
 		<config>src/main/resources/com/spring/bean/inner/springDISetter.xml</config>
 		<config>src/main/resources/com/spring/bean/scope/customerServiceScope.xml</config>
+		<config>src/main/resources/com/spring/bean/collections/customerCollections.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

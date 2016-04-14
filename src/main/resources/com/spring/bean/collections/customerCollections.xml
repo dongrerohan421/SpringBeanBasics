@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:lang="http://www.springframework.org/schema/lang" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+
+	<bean id="CustomerBean"
+		class="com.spring.bean.collections.common.Customer">
+
+		<!-- java.util.List -->
+		<property name="lists">
+			<list>
+				<value>1</value>
+				<ref bean="PersonBean" />
+				<bean class="com.spring.bean.inner.common.Person">
+					<property name="name" value="springList"></property>
+					<property name="address" value="address"></property>
+					<property name="age" value="28"></property>
+				</bean>
+			</list>
+		</property>
+
+		<!-- java.util.Set -->
+		<property name="sets">
+			<set>
+				<value>1</value>
+				<ref bean="PersonBean" />
+				<bean class="com.spring.bean.inner.common.Person">
+					<property name="name" value="springSet"></property>
+					<property name="address" value="adress"></property>
+					<property name="age" value="28"></property>
+				</bean>
+			</set>
+		</property>
+
+		<!-- java.util.Map -->
+		<property name="maps">
+			<map>
+				<entry key="key 1" value="1"></entry>
+				<entry key="key 2" value-ref="PersonBean"></entry>
+				<entry key="key 3">
+					<bean class="com.spring.bean.inner.common.Person">
+						<property name="name" value="springMap"></property>
+						<property name="address" value="address"></property>
+						<property name="age" value="28"></property>
+					</bean>
+				</entry>
+			</map>
+		</property>
+		
+		<!-- java.util.Properties -->
+
+		<property name="pros">
+			<props>
+				<prop key="admin">admin@nospam.com</prop>
+				<prop key="support">support@nospam.com</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="PersonBean" class="com.spring.bean.inner.common.Person">
+		<property name="name" value="Rohan1"></property>
+		<property name="address" value="address 1"></property>
+		<property name="age" value="28"></property>
+	</bean>
+</beans>
