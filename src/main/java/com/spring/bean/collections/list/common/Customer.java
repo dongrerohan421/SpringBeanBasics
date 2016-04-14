@@ -16,7 +16,7 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer [lists=" + lists + "]";
+		return "Customer [lists=" + lists + "] Type [" + lists.getClass() + "]";
 	}
 
 }
