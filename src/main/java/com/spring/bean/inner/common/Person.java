@@ -20,7 +20,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", address=" + address + ", age=" + age + "]";
+		return "\nPerson [name=" + name + ", address=" + address + ", age=" + age + "]";
 	}
 
 }
