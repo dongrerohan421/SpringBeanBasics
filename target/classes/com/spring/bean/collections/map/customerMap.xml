@@ -9,8 +9,8 @@
 		<property name="maps">
 			<util:map map-class="java.util.HashMap">
 				<entry key="key 1" value="1"></entry>
-				<entry key="kay 2" value="2"></entry>
-				<entry key="kay 3" value="3"></entry>
+				<entry key="key 2" value="2"></entry>
+				<entry key="key 3" value="3"></entry>
 			</util:map>
 		</property>
 	</bean>
