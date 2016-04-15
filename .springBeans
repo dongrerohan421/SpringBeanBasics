@@ -16,6 +16,9 @@
 		<config>src/main/resources/com/spring/bean/collections/set/customerSet.xml</config>
 		<config>src/main/resources/com/spring/bean/collections/map/customerMap.xml</config>
 		<config>src/main/resources/com/spring/bean/date/springDate.xml</config>
+		<config>src/main/resources/com/spring/bean/inheritance/springInheritance.xml</config>
+		<config>src/main/resources/com/spring/bean/inheritance/springInheritanceAbstract.xml</config>
+		<config>src/main/resources/com/spring/bean/inheritance/springInheritAbstractOverride.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
